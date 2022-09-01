@@ -1,0 +1,18 @@
+.app_header {
+    padding: 20px 30px;
+    border: 1.6px solid #1F1E3E;
+
+    h3 {
+        font-weight: 600;
+    }
+
+    .v-btn {
+        height: 30px !important;
+        span {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+    }
+}

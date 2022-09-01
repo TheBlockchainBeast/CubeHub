@@ -1,0 +1,29 @@
+$primary: "#8C43FA";
+$secondary: " #181735";
+$black: "#000000";
+$purple: "#6D205C";
+$info: "#7681AB";
+$dark: "#000000";
+$white: "#FFFFFF";
+$light: '#A59AAD ';
+$indigo: "#D1154B";
+$success: "#206D5F";
+$lightWhite: "#f8f9f9";
+$primaryLight: rgba(247, 81, 22, 0.1);
+$darkLight: rgba(0, 0, 0, 0.1);
+
+:root {
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --info: #{$info};
+  --indigo: #{$indigo};
+  --green: #{$success};
+  --purple: #{$purple};
+  --black: #{$black};
+  --dark: #{$dark};
+  --light: #{$light};
+  --white: #{$white};
+  --light-white: #{$lightWhite};
+  --dark-light: #{$darkLight};
+  --primary-light: #{$primaryLight};
+}

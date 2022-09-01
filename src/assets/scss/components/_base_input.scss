@@ -1,0 +1,31 @@
+.v-input {
+    border: 1px solid var(--primary);
+
+    // height: 50px !important;
+    .v-text-field_slot {
+        height: 10px !important;
+    }
+
+    input {
+        color: #fff !important;
+        font-size: 13px;
+
+        &::placeholder {
+            color: var(--light)!important;
+        }
+    }
+}
+
+.v-text-field .v-input__control .v-input__slot {
+    min-height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.v-text-field .v-input__control .v-input__append-inner {
+    margin-top: 10px;
+}
+
+.v-icon.v-icon {
+    font-size: 19px;
+}

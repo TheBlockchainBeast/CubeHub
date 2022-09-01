@@ -1,0 +1,40 @@
+.v-application {
+  [class*="text-"] {
+    font-family: var(--body-font-family) !important;
+  }
+
+  font-family: var(--body-font-family) !important;
+}
+
+.v-application {
+  [class*="display-"] {
+    font-family: var(--body-font-family) !important;
+  }
+
+  font-family: var(--body-font-family) !important;
+  background-color: var(--secondary) !important;
+}
+
+body {
+  background-color: var(--secondary) !important;
+}
+.w-100{
+  width:80%;
+}
+
+
+// Pages scss
+@import "../pages/onboarding";
+
+
+// Components scss
+@import '../components/base_input';
+@import '../components//base_sidebar';
+@import '../components//base_header';
+@import '../components/right_sidebar';
+
+
+// Layout scss
+@import '../layouts/auth_page';
+@import '../layouts/private_layout';
+@import '../layouts/public_layout';
