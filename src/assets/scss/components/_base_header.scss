@@ -7,7 +7,12 @@
     }
 
     .v-btn {
-        height: 30px !important;
+        height: 35px !important;
+        img{
+            border-radius: 50%;
+            width:20px;
+            margin-right: 10px;
+        }
         span {
             font-size: 12px;
             font-weight: 600;
