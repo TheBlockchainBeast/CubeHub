@@ -5,11 +5,11 @@
       <!-- <v-icon dark> mdi-account-circle </v-icon> -->
     </v-avatar>
 
-    <div class="ml-2">
+    <div class="ml-3" v-if="!noLabel">
       <h6 class="mb-0 white--text">{{user.name}} </h6>
       <div class="d-flex">
          <p class="mb-0 info--text">{{user.wallet_id}} </p>
-        <p class="mb-0 ml-3 info--text  mt-auto">30m</p>
+        <p class="mb-0 ml-3 info--text  mt-auto" v-if="user.time">{{user.time}}</p>
       </div>
      
     </div>
@@ -28,6 +28,10 @@ export default {
       type: Object,
       required: true,
     },
+    noLabel:{
+      type: Boolean,
+      default:false
+    }
   },
 };
 </script>

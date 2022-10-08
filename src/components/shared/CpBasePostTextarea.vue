@@ -19,7 +19,7 @@
           <img src="@/assets/images/svg/upload-image-icon.svg" class="mr-3 pointer" alt="" />
           <img src="@/assets/images/svg/upload-gif-icon.svg" class=" pointer" alt="" />
         </div>
-        <cp-base-button>Post</cp-base-button>
+        <cp-base-button size="small">Post</cp-base-button>
       </div>
     </div>
   </div>

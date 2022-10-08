@@ -1,6 +1,10 @@
 .app_header {
     padding: 20px 30px;
     border-bottom: 1.6px solid #1F1E3E;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--secondary);
 
     h3 {
         font-weight: 600;

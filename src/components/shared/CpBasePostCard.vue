@@ -1,5 +1,5 @@
 <template>
-  <div class="post_card">
+  <div class="post_card mb-4">
     <cp-base-avatar :user="user"></cp-base-avatar>
 
     <div class="post">

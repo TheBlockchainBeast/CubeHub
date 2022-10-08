@@ -1,0 +1,34 @@
+.profile-page {
+    .banner {
+        width: 100%;
+        height: 150px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .profile-image{
+        margin-top: -60px;
+        margin-left: 15px;
+    }
+
+    .v-tab {
+        color: #fff !important;
+        text-transform: capitalize;
+    }
+
+    .v-tabs-slider {
+        background-color: var(--primary);
+    }
+
+    .theme--light.v-tabs-items {
+        background: transparent;
+    }
+
+    .v-tabs-bar__content{
+        justify-content: center;
+    }
+}

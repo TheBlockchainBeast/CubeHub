@@ -1,0 +1,26 @@
+.live_stream {
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color: var(--secondary);
+    border: 1px solid #571EAE;
+    max-height: 90vh;
+    // overflow: auto;
+    box-shadow: 0px 0px 10px 4px rgba(87, 30, 174, 0.25);
+
+    .header {
+        top: 0;
+        position: sticky;
+        background-color: var(--secondary);
+    }
+
+    .users-on-call {
+        height: 50vh;
+        column-gap: 5%;
+        overflow: auto;
+
+        .user {
+            min-width: 20%;
+        }
+
+    }
+}

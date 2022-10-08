@@ -59,6 +59,15 @@ const routes = [
       title: 'Cube Space',
       layout: 'private'
     }
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: () => import(/* webpackChunkName: "about" */ '../views/profile'),
+    meta: {
+      title: 'Profile',
+      layout: 'private'
+    }
   }
 ]
 

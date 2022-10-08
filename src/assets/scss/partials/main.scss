@@ -30,6 +30,8 @@ body {
 
 // Pages scss
 @import "../pages/onboarding";
+@import "../pages/cube_space";
+@import '../pages/profile';
 
 
 // Components scss
@@ -38,6 +40,7 @@ body {
 @import '../components//base_header';
 @import '../components/right_sidebar';
 @import '../components/user_avatar';
+@import '../components//live_stream';
 
 
 // Layout scss
