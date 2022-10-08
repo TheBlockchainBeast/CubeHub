@@ -6,11 +6,11 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
+    path: '/dashboard',
+    name: 'Dashboard',
     component: HomeView,
     meta: {
-      title: 'Home',
+      title: 'Dashboard',
       layout: 'private'
     }
   },
@@ -48,6 +48,16 @@ const routes = [
     meta: {
       title: 'Onboarding',
       layout: 'public'
+    }
+  },
+
+  {
+    path: '/cube-space',
+    name: 'Cube Space',
+    component: () => import(/* webpackChunkName: "about" */ '../views/cubeSpace'),
+    meta: {
+      title: 'Cube Space',
+      layout: 'private'
     }
   }
 ]

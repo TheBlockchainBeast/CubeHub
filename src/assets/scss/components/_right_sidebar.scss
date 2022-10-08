@@ -2,7 +2,33 @@
     width: 350px;
     height: 100vh;
     background: #1F1E3E;
-    position: relative;
+    position: fixed;
     right: 0;
     top: 0;
+    box-sizing: border-box;
+    padding: 25px;
+
+
+    .search-field{
+        width: 100%;
+        position: relative;
+        input{
+            background: var(--secondary);
+            outline: var(--secondary);
+            width: 100%;
+            padding: 8px 30px 8px 50px;
+            border-radius: 100px;
+            color: #7580AA;
+
+            &::placeholder{
+                color: #7580AA;
+            }
+        }
+        svg{
+            position: absolute;
+            top: 10px;
+            left: 14px;
+            width: 17px;
+        }
+    }
 }

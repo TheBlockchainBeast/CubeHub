@@ -19,7 +19,7 @@
 
       <div class="links">
         <router-link :to="link.to" v-for="link in links" :key="link.name" class="d-flex align-center">
-              <inline-svg :src="link.icon" title="My Image" />
+              <inline-svg :src="link.icon" title="" />
               <p class="ml-3 mb-0">{{link.name}} </p>
         </router-link>
       
@@ -40,9 +40,9 @@ export default {
     return {
       links: [
         {
-          name: "Home",
+          name: "Dashboard",
           icon: require("@/assets/images/svg/home-icon.svg"),
-          to: "/",
+          to: "/dashboard",
         },
         {
           name: "Cube Space",

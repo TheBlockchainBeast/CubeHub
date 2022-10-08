@@ -23,7 +23,7 @@ Vue.component("auth", Auth);
 import './plugins/vue-inline-svg'
 
 const requireComponent = require.context(
-  "./components/global",
+  "./components",
   true,
   /\.(js|vue)$/i
 );

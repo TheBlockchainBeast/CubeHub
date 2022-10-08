@@ -1,17 +1,6 @@
 <template>
   <div class="post_card">
-    <div class="user d-flex align-center">
-      <v-avatar color="primary" size="2.3rem">
-        <img src="@/assets/images/svg/profile-img.svg" alt="John" />
-        <!-- <v-icon dark> mdi-account-circle </v-icon> -->
-      </v-avatar>
-
-      <div class="ml-2">
-        <h6 class="mb-0 white--text">Michael</h6>
-        <p class="mb-0 info--text">x02xd....2ed0</p>
-      </div>
-      <p class="mb-0 ml-3 info--text align-self-end">30m</p>
-    </div>
+    <cp-base-avatar :user="user"></cp-base-avatar>
 
     <div class="post">
       <p class="white--text">
@@ -24,21 +13,47 @@
 
       <div class="d-flex pt-3">
         <div class="d-flex mr-7">
-          <img src="@/assets/images/svg/comment-icon.svg" class="mr-1 pointer" alt="" />
-          <p class="mb-0 info--text">200</p>
+          <inline-svg
+            :src="require('@/assets/images/svg/comment-icon.svg')"
+            class="pointer"
+            title=""
+          />
+          <p class="mb-0 ml-1 info--text">200</p>
         </div>
         <div class="d-flex mr-7">
-          <img src="@/assets/images/svg/heart-icon.svg" class="mr-1 pointer" alt="" />
-          <p class="mb-0 info--text">13k</p>
+          <inline-svg
+            :src="require('@/assets/images/svg/heart-icon.svg')"
+            class="pointer"
+            title=""
+          />
+          <p class="mb-0 info--text ml-1">13k</p>
         </div>
         <div class="d-flex">
-          <img src="@/assets/images/svg/export-icon.svg" class="mr-1 pointer" alt="" />
-          <p class="mb-0 info--text">40</p>
+          <inline-svg
+            :src="require('@/assets/images/svg/export-icon.svg')"
+            class="pointer"
+            title=""
+          />
+          <p class="mb-0 info--text ml-1">40</p>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      user: {
+        name: "micheal",
+        wallet_id: "x02xd....2ed0",
+        url: require("@/assets/images/svg/profile-img.svg"),
+      },
+    };
+  },
+};
+</script>
 
 <style lang="scss">
 .post_card {

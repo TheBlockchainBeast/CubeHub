@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-10 d-flex w-100">
+  <div class="mb-10 d-flex ">
     <v-avatar color="primary mr-6" size="2.3rem">
       <img src="@/assets/images/svg/profile-img.svg" alt="John" />
       <!-- <v-icon dark> mdi-account-circle </v-icon> -->
@@ -7,6 +7,7 @@
 
     <div class="w-100">
       <v-textarea
+      rows="3"
         hide-details="auto"
         color="secondary--light"
         background-color="secondary--light"

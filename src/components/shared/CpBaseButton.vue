@@ -1,6 +1,6 @@
 <template>
   <v-btn
-    color="primary"
+    :color="color"
     v-on="$listeners"
     :disabled="disabled"
     :loading="loading"
@@ -9,14 +9,25 @@
     :block="block"
     :outlined="outlined"
     class="text-capitalize"
+    :style="{
+      width: buttonWidth
+    }"
   >
     <slot />
   </v-btn>
 </template>
 
 <script>
+
 export default {
-  data: () => ({}),
+  data: () => ({
+    btnSizes: {
+      large: '300px',
+      medium: '200px',
+      small: 'inherit'
+
+    }
+  }),
   props: {
     color: {
       type: String,
@@ -33,12 +44,20 @@ export default {
     },
     block: {
       type: Boolean,
-      default: false
+      default: false,
     },
-    hasIcon:{
-      type: Boolean
-    }
+
+    size: {
+      type: String,
+      default:'large'
+    },
   },
+
+  computed:{
+    buttonWidth(){
+      return this.btnSizes[this.size]
+    }
+  }
 };
 </script>
 

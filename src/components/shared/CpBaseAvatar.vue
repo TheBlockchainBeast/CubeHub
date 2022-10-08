@@ -1,0 +1,33 @@
+<template>
+  <div class="user_avatar d-flex align-center">
+    <v-avatar color="primary" size="2.3rem">
+      <img :src="user.url" alt="John" />
+      <!-- <v-icon dark> mdi-account-circle </v-icon> -->
+    </v-avatar>
+
+    <div class="ml-2">
+      <h6 class="mb-0 white--text">{{user.name}} </h6>
+      <div class="d-flex">
+         <p class="mb-0 info--text">{{user.wallet_id}} </p>
+        <p class="mb-0 ml-3 info--text  mt-auto">30m</p>
+      </div>
+     
+    </div>
+    
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    time: {
+      type: String,
+      default: null,
+    },
+    user: {
+      type: Object,
+      required: true,
+    },
+  },
+};
+</script>
